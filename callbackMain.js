@@ -1,15 +1,7 @@
 /*
 This is proof of concept that we can read a YAML file, change it, and write it again. 
 
-We will be using the yaml node modules. 
-https://www.npmjs.com/package/yaml
-
-We have example YAML and JSON files included. 
-
-We are going to read them using fs...
-and use the yaml libraries to convert them to objects that we can easily modify...
-then convert them back to yaml files...
-and write them to disk again. 
+See the synchronousMain, this is just an example of the callback form of fs.readFile.
 
 There are different readfiles available in the fs library. 
 fs.readFile         //callback based
@@ -41,9 +33,6 @@ fs.readFile(path.join(__dirname, './yamlexample'), 'utf8', (err, data) => {
   objectOrArray = YAML.parse(data);
   console.log(objectOrArray)
 });
-
-
-
 
 
 
